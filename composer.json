@@ -1,0 +1,30 @@
+{
+  "name": "vineyard/s3-vectors-laravel",
+  "description": "Laravel integration for AWS S3 Vectors with smart caching and batching.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {"name": "Zachary Vineyard", "email": "vineyaz@miamioh.edu"}
+  ],
+  "require": {
+    "php": ">=8.1",
+    "illuminate/support": ">=10.0|>=11.0",
+    "aws/aws-sdk-php": "^3.350"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vineyard\\S3Vectors\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Vineyard\\S3Vectors\\S3VectorsServiceProvider"
+      ],
+      "aliases": {
+        "S3Vectors": "Vineyard\\S3Vectors\\Facades\\S3Vectors"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
