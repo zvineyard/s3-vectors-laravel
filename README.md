@@ -17,8 +17,8 @@ AWS_SECRET_ACCESS_KEY=...
 AWS_DEFAULT_REGION=us-east-2
 
 S3V_REGION=us-east-2
-S3V_BUCKET=ucm-vectors
-S3V_INDEX=ucm-mailings-index
+S3V_BUCKET=your-vectors
+S3V_INDEX=your-vectors-index
 ```
 
 ### Optional
